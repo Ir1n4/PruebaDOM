@@ -6,3 +6,14 @@ const p = document.createElement("p");
 p.textContent = "hola mundo bonito";
 // 4. Append the p element to the div element
 app?.appendChild(p);
+
+
+fetch("http://localhost:5000/socies/")
+.then(resp =>{
+    resp.json()
+        .then (data=>{
+            p.textContent=data.mensaje;
+            app?.appendChild(p);
+        })
+    });
+    
