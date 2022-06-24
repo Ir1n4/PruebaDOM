@@ -1,0 +1,23 @@
+{
+  "name": "sitio_prueba",
+  "version": "1.0.0",
+  "description": "<h1>servidor para proyecto de introducción a la programación de puerta18<h1> <h2>Para hacer<h2> poner required en elementos claves del formulario hacer que el texto de radio se desactive si no se selecciona ver cómo enviar los datos a la tabla con dom manipulation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KrissFT/Sitio_prueba.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KrissFT/Sitio_prueba/issues"
+  },
+  "homepage": "https://github.com/KrissFT/Sitio_prueba#readme",
+  "dependencies": {
+    "nodemon": "^2.0.18",
+    "typescript": "^4.7.4"
+  }
+}

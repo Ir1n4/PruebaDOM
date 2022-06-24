@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PuertaWeb</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="css/adminlte.min.css">
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <a href="home.html"><img src="img/puertalogo.png" height="52px" width="126px"></a>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item">Inicio</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <!-- Small boxes (Stat box) -->
+        <div class="row">
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-info">
+              <div class="inner">
+                <h3>38</h3>
+
+                <p>Nuevxs Socixs</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-ios-personadd"></i>
+              </div>
+              <a href="puertaweb.html" class="small-box-footer">Mas Información <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-danger">
+              <div class="inner">
+                <h3>65</h3>
+
+                <p>Socixs Presentes</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-android-hand"></i>
+              </div>
+              <a href="Socixspresentes.html" class="small-box-footer">Mas Información <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-success">
+              <div class="inner">
+                <h3>290</h3>
+
+                <p>Socixs Registrados</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-ios-person"></i>
+              </div>
+              <a href="Socixosregistrados.html" class="small-box-footer">Mas Información <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-warning">
+              <div class="inner">
+                <h3>44</h3>
+
+                <p>Invitados</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-ios-person-outline"></i>
+              </div>
+              <a href="Invitados.html" class="small-box-footer">Mas Información <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+          <!-- ./col -->
+        </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </section>
+    <h2>Registrarse</h2>
+    <!-- FORMULARIO -->
+        <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <form action="http://localhost:5000/registro" method="post">
+          <!-- columna izquierda -->
+          <div class="col-10">
+            <!-- general form elements -->
+            <div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">Datos básicos</h3>
+              </div>
+              <!-- form start -->
+              <!-- form datos personales -->
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-4">
+                      <label for="nombre">Nombre</label>
+                      <input type="text" class="form-control" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="col-4">
+                      <label for="apellido">Apellido</label>
+                      <input type="text" class="form-control" id="apellido" name="apellido" required>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-4">
+                        <label for="nick">Nickname</label>
+                        <input type="text" class="form-control" id="nick" name="nick">
+                      </div>
+                      <div class="col-4">
+                        <label for="dni">D.N.I</label>
+                        <input type="text" class="form-control" id="dni" name="dni" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-4">
+                        <label for="fechaNac">Fecha de nacimiento:</label>
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">
+                              <i class="far fa-calendar-alt"></i>
+                            </span>
+                          </div>
+                          <input type="date" id="fechaNac" name="fechaNac" required>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <label>Pronombre</label>
+                        <div class="form-group">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pronoun" id="masc" value="Él">
+                            <label class="form-check-label" for="masc">Él</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pronoun" id="fem" value="Ella">
+                            <label class="form-check-label" for="fem">Ella</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pronoun" id="nb1" value="Elle">
+                            <label class="form-check-label" for="nb1">Elle</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pronoun" id="nb2" value="Cualquiera">
+                            <label class="form-check-label" for="nb2">Cualquier pronombre</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pronoun" id="otro"><input type="text" name="pronoun" id="otro" placeholder="Otro pronombre">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.form datos personales -->
+                </div>
+            </div>
+                 <!-- form datos basicos-->  
+                  <div class="card card-warning">
+                    <div class="card-header">
+                      <h3 class="card-title">Domicilio</h3>
+                    </div>
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-4">
+                          <label for="direccion">Dirección</label>
+                          <input type="text" class="form-control" id="direccion" name="direccion" required>
+                        </div>
+                        <div class="col-4">
+                          <label for="barrio">Barrio</label>
+                          <input type="text" class="form-control" id="barrio" name="barrio" required>
+                        </div>
+                        <div class="col-4">
+                          <label for="localidad">Localidad</label>
+                          <input type="text" class="form-control" id="localidad" name="localidad" required>
+                        </div>
+                      </div>
+                    </div>
+                  </div>  
+                <!-- /.form datos basicos -->
+                <!-- form contacto-->  
+              <div class="card card-info">
+                <div class="card-header">
+                  <h3 class="card-title">Contacto</h3>
+                </div>
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-4">
+                        <label for="tel">Teléfono</label>
+                        <input type="text" class="form-control" id="tel" name="tel" required>
+                      </div>
+                      <div class="col-4">
+                        <label for="redes">Redes sociales</label>
+                        <input type="text" class="form-control" id="redes" name="redes">
+                      </div>
+                      <div class="col-4">
+                        <label for="mail">Email</label>
+                        <input type="email" class="form-control" id="mail" name="mail" required>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <!-- /.form contacto -->
+          <!--/.columna izquierda -->
+          </div>
+          
+          <!-- columna derecha -->
+          <div class="col-10">
+            <!-- form estudios -->
+            <div class="card card-success">
+              <div class="card-header">
+                <h3 class="card-title">Estudios</h3>
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-8">
+                    <label for="esc">Escuela</label>
+                    <input type="name" class="form-control" id="esc" name="esc">
+                  </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="carrera">Seleccionar Carrera</label>
+                    <select class="form-control" id="carrera" name="carrera">
+                      <option value="prog">Programación</option>
+                      <option value="3D">3D</option>
+                      <option value="foto">Fotografía</option>
+                      <option value="disñ">Diseño</option>
+                      <option value="robot">Robótica</option>
+                    </select>
+                  </div>
+                </div>
+            </div>
+            </div>
+          </div>
+          <!-- /.form estudios -->
+
+          <!-- form datos tutor -->
+          <div class="card card-primary">
+            <div class="card-header">
+              <h3 class="card-title">Datos de tutor</h3>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-4">
+                  <label for="nombreTutor">Nombre del tutor:</label>
+                  <input type="text" class="form-control" id="nombreTutor" name="nombreTutor">
+                </div>
+                <div class="col-4">
+                  <label for="apellidoTutor">Apellido del tutor:</label>
+                  <input type="text" class="form-control" id="apellidoTutor" name="apellidoTutor">
+                </div>
+              </div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-4">
+                      <label for="vinculo">Vinculo</label>
+                      <input type="text" class="form-control" id="vinculo" name="vinculo">
+                    </div>
+                    <div class="col-4">
+                      <label for="telTutor">Teléfono</label>
+                      <input type="text" class="form-control" id="telTutor" name="telTutor">
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-4">
+                      <label for="dniTutor">D.N.I</label>
+                      <input type="text" class="form-control" id="dniTutor" name="dniTutor">
+                    </div>
+                    <div class="col-4">
+                      <label for="edadTutor">Edad</label>
+                      <input type="text" class="form-control" id="edadTutor" name="edadTutor">
+                    </div>
+                  </div>
+                </div>
+                <!-- /.form datos tutor -->
+              </div>
+              <!-- /.card-body -->
+
+              <div class="card-footer">
+                <button type="submit" class="btn btn-primary">Registrar</button>
+              </div>
+              </div>
+          </div>
+        </form>
+  
+            <!-- /.card -->
+          </div>
+          <!--/.col (right) -->
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
+    <!-- /.FORMULARIO -->
+  
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+</html>
