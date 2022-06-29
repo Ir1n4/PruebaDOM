@@ -60,6 +60,7 @@ fetch("http://localhost:5000/socies")
                 td_button.onclick = function(){
                     showSocie(socie);
                 };
+                
                 tr?.appendChild(td_nombre);
                 tr?.appendChild(td_apellido);
                 tr?.appendChild(td_nick);
@@ -67,7 +68,8 @@ fetch("http://localhost:5000/socies")
                 tr?.appendChild(td_button);
                 table?.appendChild(tr);
              });
-
+            })
+        });
              function showSocie (socie:Socie){
                 fetch("http://localhost:5000/socie/"+socie.nick)
                 .then (resp => {
